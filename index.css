@@ -2,3 +2,84 @@ html, body {
     margin: 0;
     padding: 0;
 }
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    position: relative;
+}
+.fern {
+    position: absolute;
+    width: 4rem;
+    top: -42px;
+    left: 180px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 3.5rem 2rem;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+img {
+    width: 100%;
+}
+.logo {
+    font-size: 2rem;
+    color: #AADF75;
+}
+.menu,
+.exit {
+    width: 2rem;
+}
+.exit {
+    width: 1rem;
+}
+#nav {
+    display: none;
+}
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+p {
+    line-height: 1.5;
+}
+.btn-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 2rem;
+}
+.cta {
+    color: #7A4900;
+    display: block;
+    padding: 1rem ;
+    border: 1px solid #7A4900;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 10px;
+}
+@media screen and (min-width:900px) {
+    .content-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+    }
+    header {
+        padding: 3.5rem;
+    }
+    .fern{
+        top: 4px;
+        left: 202px;
+    }
+}
